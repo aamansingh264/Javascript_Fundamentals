@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="first-div">
+        <h1 id="first-heading" class = "First class">Dom learning</h1>
+        <p class="para">para 1</p>
+        <h2>seond heading</h2>
+    </div>
+    <div>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+        </ul>
+    </div>
+</body>
+<script>
+    console.log("Hello World");
+    const firstheading = document.getElementById('first-heading');
+    console.log(firstheading);
+    console.log(firstheading.id);
+    console.log(firstheading.className);
+    // document.getElementsByClassName("class name");
+
+    const firstDiv = document.getElementsByClassName('first-div');   //not used mostly 
+    console.log(firstDiv);
+
+    const tag = document.getElementsByTagName('p');
+    console.log(tag);
+
+    firstheading.style.color = "Tomato";
+    firstheading.style.fontFamily = "Fantasy";
+
+    
+     
+</script>
+</html>
