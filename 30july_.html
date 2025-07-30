@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    Username: <input type="text" id="username">
+    <button id="submitBtn">Submit</button>
+
+    <script>
+        document.getElementById("submitBtn").addEventListener('click', function() {
+            alert("Form submited successfully");
+        });
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <button style="padding: 10px 20px; font-size: 20px; border-radius: 10px; background-color: red; color: white;" id="redBtn">Red</button>
+    <button style="padding: 10px 20px; font-size: 20px; border-radius: 10px; background-color: blue; color: rgb(223, 22, 22);" id="blueBtn">Blue</button>
+    <button style="padding: 10px 20px; font-size: 20px; border-radius: 10px; background-color: pink; color: black;" id="pinkBtn">Pink</button>
+
+    <h1 id="first-heading">Cricketers</h1>
+    <p class="para">ROHTI SHARMA</p>
+
+    
+
+    <script>
+        const redBtn = document.getElementById("redBtn");
+        const blueBtn = document.getElementById("blueBtn");
+        const pinkBtn = document.getElementById("pinkBtn");
+
+        redBtn.addEventListener('click', () => document.body.style.backgroundColor = "red");
+        blueBtn.addEventListener('click', () => document.body.style.backgroundColor = "blue");
+        pinkBtn.addEventListener('click', () => document.body.style.backgroundColor = "pink");
+
+        const para = document.querySelectorAll('.para');
+
+        // para[1].style.border = "solid";
+        // para[1].style.padding = "10px";
+
+        // para[0].style.cssText = "border:solid; padding: 20px; border-radius: 10px";
+
+        para.forEach((val) => {
+            val.style.color = "GRAY";
+            
+        });
+    </script>
+</body>
+</html>
